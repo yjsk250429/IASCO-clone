@@ -57,14 +57,15 @@
     text-align: center;
     border-right: 1px solid #E1E1E1;
     background: #F9F9F9;
+    cursor: pointer;
 }
 .con1 ul li:hover {
     background: #363636;
 }
-.con1 ul li:hover a{
+.con1 ul li:hover span{
     color: #fff;
 }
-.con1 ul li a{
+.con1 ul li span{
     display: block;
     padding: 17px 0;
 }
