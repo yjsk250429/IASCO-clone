@@ -177,24 +177,25 @@ const con1_service = () => {
     const $next = get('.main .con1 .inner .btns .next');
 
     let cnt = 0,
-        size = 470;
+        size = 470,
+        max = 3760;
 
     $next.addEventListener('click', (e) => {
-        cnt += size;
-        if(cnt < 3760)
+        if(cnt +size < max)
+            cnt += size;
             $lis.forEach((con, idx) => {
                 con.style.transition = 'transform 0.2s';
                 con.style.transform = `translateX(-${cnt}px)`;
             });
-        if(cnt>=size)
-            $prev.addEventListener('click', (e) => {
-                cnt -= size;
-                $lis.forEach((con, idx) => {
-                    con.style.transition = 'transform 0.2s';
-                    con.style.transform = `translateX(-${cnt}px)`;
-                });
-            }); 
     });
+    $prev.addEventListener('click', (e) => {
+        if(cnt-size>=0)
+        cnt -= size;
+        $lis.forEach((con, idx) => {
+            con.style.transition = 'transform 0.2s';
+            con.style.transform = `translateX(-${cnt}px)`;
+        });
+    }); 
 };
 
 const comInit = () => {
