@@ -7,7 +7,6 @@ const con1_service = () => {
     const $lis = getAll('.main .con1 .inner .service-wrap ul li');
     const $prev = get('.main .con1 .inner .btns .prev');
     const $next = get('.main .con1 .inner .btns .next');
-    // const $fullLine = get('.main .con1 .inner .line-wrap');
     const $moveLine = get('.main .con1 .inner .line-wrap .line');
 
     let cnt = 0,

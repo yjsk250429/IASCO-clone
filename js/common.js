@@ -127,13 +127,13 @@ const topbar = () => {
     });
 };
 
-const comInit = () => {
+// const comInit = () => {
+
+
+// };
+
+(() => {
     topbar();
     MainBanner();
     MainMenu();
-
-};
-
-(() => {
-    comInit();
 })();

@@ -49,15 +49,7 @@
 #header.on h1 img {
     transform: translateY(0);
 }
-/* #header.on button{
-    border-color: #ED1C24;
-    color: #ED1C24;
-    transition: 0.4s;
-}
-#header.on button:hover{
-    background: #ED1C24;
-    color: #fff;
-} */
+
 
 #header.on .inner .nav .gnb li a {
     color: #000;
