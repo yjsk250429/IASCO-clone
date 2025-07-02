@@ -1,0 +1,75 @@
+.main .subMenu-bar .inner .sub2 ul{
+    height: 167px;
+}
+
+
+.con1{
+    background-image: url(../images/sub-ceo-bg2.png);
+    background-repeat: no-repeat;
+    background-position: 0 430px;
+}
+.inner h3 + div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.CEOimage{}
+.CEOimage img{
+    height: 475px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.txt{
+    width:683px ;
+    word-break: keep-all;
+}
+.txt strong{
+    display: block;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 80px;
+    width: 610px;
+    letter-spacing: -0.6px;
+    position: relative;
+}
+.txt strong::before{
+    content: "";
+    display: block;
+    width: 700px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    bottom: -38px;
+}
+.txt strong::after{
+    content: "";
+    display: block;
+    width: 105px;
+    height: 2px;
+    background: #ED1C24;
+    position: absolute;
+    bottom: -38px;
+}
+.txt strong > span{
+    color: #ED1C24;
+    font-weight: 700;
+}
+.txt p{
+    line-height: 25px;
+    font-weight: 350;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.txt em{
+    text-align: right;
+    display: block;
+    font-size: 18px;
+}
+.txt em > span{
+    display: block;
+    font-weight: 500;
+}
+.txt em > span > span {
+    letter-spacing:20px;
+}

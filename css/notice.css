@@ -1,0 +1,123 @@
+.main .con1 .inner .search {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main .con1 .inner .search p {
+    line-height: 50px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.main .con1 .inner .search p img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.main .con1 .inner .search p span:nth-of-type(1) {
+    color: #ed1c24;
+}
+.main .con1 .inner .search p span:nth-of-type(2) {
+}
+.main .con1 .inner .search p span:nth-of-type(3) {
+}
+.main .con1 .inner .search ul {
+    display: flex;
+
+}
+.main .con1 .inner .search ul li {
+}
+.main .con1 .inner .search ul li select {
+    appearance: none;
+    width: 120px;
+    height: 50px;
+    border-color: #ccc;
+    margin-right: 5px;
+    padding: 15px 10px;
+    background-image: url(../images/sub-visual-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95px 60%;
+}
+.main .con1 .inner .search ul li input {
+    width: 220px;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.main .con1 .inner .search ul li button {
+    width: 55px;
+    height: 50px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.main .con1 .inner table {
+    border-top: 1px solid #ED1C24;
+    font-size: 15px;
+    color: #343434;
+}
+.main .con1 .inner table .w1{
+    width: 160px;
+}
+.main .con1 .inner table .w2{
+    width: 1020px;
+}
+.main .con1 .inner table .w3,
+.main .con1 .inner table .w4{
+    width: 110px;
+}
+.main .con1 .inner table thead {}
+.main .con1 .inner table thead tr {
+
+}
+.main .con1 .inner table thead tr th {
+    height: 65px;
+    vertical-align: middle;
+    background: #F8F8F8;
+    font-size: 14px;
+    color: #000;
+}
+.main .con1 .inner table tbody tr {}
+.main .con1 .inner table tbody tr td {
+    height: 65px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #E5E5E5;
+}
+.main .con1 .inner table tbody tr:first-of-type td:nth-child(2){
+    font-weight: 500;
+}
+.main .con1 .inner table tbody tr td:nth-child(2){
+    text-align-last: left;
+    cursor: pointer;
+}
+.main .con1 .inner table tbody tr:hover td{
+    background: #FFFCFC;
+}
+.main .con1 .inner .paging {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.main .con1 .inner .paging button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+}
+.main .con1 .inner .paging button:nth-child(3){
+    border: none;
+    background: #444;
+    color: #fff;
+}
+.main .con1 .inner .paging button i{
+    color: #999;
+    font-size: 15px;
+}
+.main .con1 .inner .paging button:nth-child(2) i{
+    transform: scaleX(-1);
+}

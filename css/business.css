@@ -1,0 +1,142 @@
+.con{
+    position: relative;
+}
+.con:not(.con1){
+    height: 610px;
+}
+.con:nth-of-type(odd)::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 610px;
+    background: #f9f9f9;
+    position: absolute;
+    margin-top: -110px;
+    z-index: -200;
+}
+.con > img{
+    position: absolute;
+}
+.con2 > img{
+    top: 340px;
+    left: -55px;
+    z-index: -100;
+}
+.con6 > img{
+    right: -30px;
+    top: -190px;
+    z-index: -100;
+}
+.con9 > img{
+    left: 50px;
+    top: -50px;
+    z-index: -100;
+}
+.con10 > img{
+    right: -170px;
+    top: 250px;
+    z-index: -100;
+}
+.con:not(.con1) .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.con1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 80px;
+}
+.con1 ul li{
+    width: 279px;
+    height: 60px;
+    text-align: center;
+    border-right: 1px solid #E1E1E1;
+    background: #F9F9F9;
+}
+.con1 ul li:hover {
+    background: #363636;
+}
+.con1 ul li:hover a{
+    color: #fff;
+}
+.con1 ul li a{
+    display: block;
+    padding: 17px 0;
+}
+.con1 ul li:nth-child(1),
+.con1 ul li:nth-child(2),
+.con1 ul li:nth-child(3),
+.con1 ul li:nth-child(4),
+.con1 ul li:nth-child(5){
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.con1 ul li:nth-child(5n){
+    border-right: none;
+}
+.con .inner > img{
+    display: block;
+}
+.con:nth-of-type(odd) .inner > img{
+    z-index: -300;
+}
+.con:not(.con1) .inner{
+    height: 610px;
+}
+.con .txt{
+    width: 650px;
+}
+.con:nth-of-type(even) .txt{
+    margin-left: 70px;
+}
+.con:nth-of-type(odd) .txt{
+    margin-right: 70px;
+}
+.con .txt h4{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    height: 56px;
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 23px;
+}
+.con .txt h4 span{
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(90deg, #ED1D23 0%, #F4801F 100%);
+    font-size: 24px;
+    line-height: 56px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.con .txt h4 span::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 28px;
+    opacity: 0.4;
+}
+.con .txt p{
+    line-height: 25.6px;
+    color: #555;
+    word-break: keep-all;
+}
+.con .txt p:first-of-type{
+    margin-bottom: 34px;
+}
+.con11{
+    margin-bottom: 140px;
+}

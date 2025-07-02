@@ -1,0 +1,136 @@
+#visual {
+}
+#visual .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#visual .bg img {
+}
+#visual .inner {
+    height: 500px;
+    display: flex;
+    align-items: end;
+}
+
+#visual .inner h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 63px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    position: relative;
+}
+#visual .inner h2::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#visual .inner strong {
+    font-size: 17px;
+    color: #fff;
+    display: block;
+    margin-bottom: 40px;
+    padding-bottom: 6px;
+}
+#visual .inner strong span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ed1c24;
+    display: block;
+}
+
+.main .subMenu-bar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main .subMenu-bar .inner {
+    display: flex;
+}
+.main .subMenu-bar .inner .home {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 60px;
+    text-align: center;
+}
+.main .subMenu-bar .inner .home a {
+    padding: 22px 22px;
+}
+.main .subMenu-bar .inner .home i {
+    line-height: 60px;
+    font-size: 17px;
+    color: #ed1c24;
+}
+.main .subMenu-bar .inner .subNav {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: -1px;
+    position: relative;
+    cursor: pointer;
+}
+.main .subMenu-bar .inner .subNav span {
+    line-height: 60px;
+    padding-left: 40px;
+    padding-right: 150px;
+}
+.main .subMenu-bar .inner .subNav i {
+    font-size: 12px;
+    font-weight: 600;
+}
+.main .subMenu-bar .inner .subNav ul {
+    display: none;
+    position: absolute;
+    top: 61px;
+    width: 300px;
+    height: 334px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    transition: 0.4s;
+}
+.main .subMenu-bar .inner .subNav ul.on{
+    display: block;
+}
+.main .subMenu-bar .inner .subNav ul li{
+    transition: 0.4s;
+}
+.main .subMenu-bar .inner .subNav ul li a{
+    display: block;
+    padding: 15px 0 15px 40px;
+    transition: 0.4s;
+}
+.main .subMenu-bar .inner .subNav ul li:hover{
+    background: #ed1c24;
+}
+.main .subMenu-bar .inner .subNav ul li:hover a{
+    color: #fff;
+}
+.main .subMenu-bar .inner .subNav ul li.on{
+    background: #ed1c24;
+}
+.main .subMenu-bar .inner .subNav ul li.on a{
+    color: #fff;
+}
+
+.main .con {
+}
+.main .con .inner {
+}
+.main .con .inner h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 80px;
+}
