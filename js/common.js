@@ -127,84 +127,11 @@ const topbar = () => {
     });
 };
 
-// const con1_service = () => {
-//     const $prev = get('.main .con1 .inner .service-wrap .btns .prev');
-//     const $next = get('.main .con1 .inner .service-wrap .btns .next');
-//     const $box = get('.main .con1 .inner .service-wrap ul');
-//     const $boxLi = getAll('.main .con1 .inner .service-wrap ul li');
-
-//     const size = 465;
-//     let current = 0;
-
-//     $next.addEventListener('click', (e) => {});
-// };
-
-//클릭 할때마다 size++ 되고, 그러다가 ul의 길이를 초과하게 되면 멈춤
-const con2_partners = () => {
-    const $prev = get('.main .con2 .inner .btns .prev');
-    const $next = get('.main .con2 .inner .btns .next');
-    const $box = get('.main .con2 .inner ul');
-
-    let size = 259,
-        current = 0;
-
-    $next.addEventListener('click', (e) => {
-        current += size;
-        if (current > 3700) {
-            return;
-        } else {
-            $box.style.left = `-${current}px`;
-        }
-    });
-};
-
-const con3_sel = () => {
-    const $sel = getAll('.main .con3 .inner .sel li');
-
-    $sel.forEach((item) => {
-        item.addEventListener('click', (e) => {
-            $sel.forEach((itemLi) => {
-                itemLi.classList.remove('on');
-            });
-            item.classList.add('on');
-        });
-    });
-};
-
-const con1_service = () => {
-    const $lis = getAll('.main .con1 .inner .service-wrap ul li');
-    const $prev = get('.main .con1 .inner .btns .prev');
-    const $next = get('.main .con1 .inner .btns .next');
-
-    let cnt = 0,
-        size = 470,
-        max = 3760;
-
-    $next.addEventListener('click', (e) => {
-        if(cnt +size < max)
-            cnt += size;
-            $lis.forEach((con, idx) => {
-                con.style.transition = 'transform 0.2s';
-                con.style.transform = `translateX(-${cnt}px)`;
-            });
-    });
-    $prev.addEventListener('click', (e) => {
-        if(cnt-size>=0)
-        cnt -= size;
-        $lis.forEach((con, idx) => {
-            con.style.transition = 'transform 0.2s';
-            con.style.transform = `translateX(-${cnt}px)`;
-        });
-    }); 
-};
-
 const comInit = () => {
     topbar();
     MainBanner();
     MainMenu();
-    con1_service();
-    con2_partners();
-    con3_sel();
+
 };
 
 (() => {

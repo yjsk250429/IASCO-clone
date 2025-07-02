@@ -534,6 +534,7 @@
 .main .con3 .inner .sel li {
     position: relative;
     margin-right: 50px;
+    cursor: pointer;
 }
 .main .con3 .inner .sel li.on::after {
     content: '';
@@ -547,15 +548,15 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.main .con3 .inner .sel li.on a {
+.main .con3 .inner .sel li.on span {
     color: #ed1c24;
 }
-.main .con3 .inner .sel li a {
+.main .con3 .inner .sel li span {
     font-size: 18px;
     font-weight: 800;
     color: #ccc;
 }
-.main .con3 .inner .sel li a:hover {
+.main .con3 .inner .sel li span:hover {
     color: #ed1c24;
 }
 .main .con3 .inner .list {
