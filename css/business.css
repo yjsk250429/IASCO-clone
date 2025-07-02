@@ -47,9 +47,10 @@
 .con1 ul{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1399px;
     border: 1px solid #E1E1E1;
     margin-bottom: 80px;
+    justify-content: center;
 }
 .con1 ul li{
     width: 279px;
