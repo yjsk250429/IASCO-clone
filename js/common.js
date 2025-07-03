@@ -83,6 +83,9 @@ const topbar = () => {
     const $allMenu = get('.all-menu');
     const $popUp = get('#sitemap-wrap');
     const $wrap = get('#wrap');
+    const $span1 = get('.all-menu span:nth-child(1)');
+    const $span2 = get('.all-menu span:nth-child(2)');
+    const $span3 = get('.all-menu span:nth-child(3)');
 
     let ty = 0,
         isOpen = false;
@@ -113,7 +116,13 @@ const topbar = () => {
         if (isOpen) {
             $popUp.classList.add('on');
             $popUp.animate({ opacity: [0, 1] }, 200);
+            $span1.style.transform = 'translateX(6px) rotate(45deg)';
+            $span3.style.transform = 'translateX(6px) rotate(-45deg)';
+            $span2.style.opacity = '0';
           } else {
+            $span1.style.transform = 'rotate(0deg)';
+            $span3.style.transform = 'rotate(0deg)';
+            $span2.style.opacity = '1';
             $popUp.animate({ opacity: [1, 0] }, 200).finished.then(() => {
             $popUp.classList.remove('on');
             })
@@ -126,11 +135,6 @@ const topbar = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 };
-
-// const comInit = () => {
-
-
-// };
 
 (() => {
     topbar();

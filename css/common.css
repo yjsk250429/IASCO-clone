@@ -114,18 +114,23 @@
     width: 35px;
     height: 3px;
     background: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     margin-left: 33px;
+    transition: 0.4s;
 }
 .all-menu span:nth-child(1) {
     margin-top: 38px;
+    transform-origin: left;
 }
 .all-menu span:nth-child(2) {
     width: 26px;
-    transition: 0.2s linear;
+    transition: 0.2s;
 }
 .all-menu:hover span:nth-child(2) {
     width: 35px;
+}
+.all-menu span:nth-child(3) {
+    transform-origin: left;
 }
 
 #header .inner {
